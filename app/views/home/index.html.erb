@@ -9,10 +9,6 @@
       API and javascript.</p>
   <p> <%= link_to "Add a Park?", "#", { :id => "addPark" } %> </p>
 
-  <div id="add_park">
-    <input id="addParkButton" type="button" value="Add a Park?"/>
-  </div>
-
   <script type="text/javascript">
     var parks = <%= @parks.to_json %>;
   </script>

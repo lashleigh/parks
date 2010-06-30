@@ -22,5 +22,4 @@ $(function() {
 
   // dosearch is the div id of the button
   $("#dosearch").click(doSearch);
-  $("#addParkFromSearch").click(createPark);
 });

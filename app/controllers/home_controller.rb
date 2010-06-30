@@ -3,9 +3,10 @@ class HomeController < ApplicationController
     @parks = Park.find(:all).collect do |p|
       {"id" => p.id,
         "url" => p.site_url,
+        "name" => p.name,
         "latitude" => p.latitude,
         "longitude" => p.longitude,
-        "name" => p.name
+        "description" => p.description,
       }
     end
   end
