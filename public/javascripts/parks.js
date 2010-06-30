@@ -32,10 +32,10 @@ $(function() {
       $("#addPark").html("make a suggestion");
       addingPark = false;
 
-      /*var p = e.latLng;
-      $.get("/park/new", { lat: p.lat(), lng: p.lng() }, function(stuff) {
+      var p = e.latLng;
+      $.get("/home/new_park", { lat: p.lat(), lng: p.lng() }, function(stuff) {
         $.fancybox({ content: stuff, scrolling: "no" });
-      });*/
+      });
       alert("add a park");
     }
   }); 

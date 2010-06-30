@@ -1,0 +1,25 @@
+<div id="new_park">
+  <h1>New Park</h1>
+  
+  <% form_for @park do |f| %>
+    <%= f.error_messages %>
+  
+    <p>
+      <%= f.label :name %><br />
+      <%= f.text_field :name %>
+    </p>
+    <p>
+      <%= f.label :site_url %><br />
+      <%= f.text_field :site_url %>
+    </p>
+    <p>
+      <%= f.label :description %><br />
+      <%= f.text_area :description %>
+    </p>
+    <p>
+      <%= f.hidden_field :latitude %>
+      <%= f.hidden_field :longitude %>
+      <%= f.submit 'Create' %>
+    </p>
+  <% end %>
+</div>
