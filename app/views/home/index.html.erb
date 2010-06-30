@@ -1,7 +1,18 @@
 
 <div id="container">
   <h1> Welcome! I hope this app can service all you park needs </h1>
-  <p> Basically,  </p>
+  <p> A while back I was trying to plan a bicycle tour to visit national parks. 
+      I searched and searched for a simple map with all of the national parks 
+      labeled, but I never found anything useful. My planned trip no longer involves 
+      visiting all of the national parks, but I still thought this might be useful 
+      to someone. </p>
+  <div id="add_park">
+    <input id="addParkButton" type="button" value="Add a Park?"/>
+  </div>
+  <script type="text/javascript">
+    var parks = <%= @parks.to_json %>;
+  </script>
+
   <div>
     <input type="text" id="queryInput" value="pizza" style="width: 250px;"/>
     <input id="dosearch" type="button" value="Find"/>
