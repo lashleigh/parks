@@ -17,7 +17,7 @@ $(function() {
     google.maps.event.addListener(marker, 'click',
       function() { parkInfoWindow.open(gMap, marker); });
   });
-  $("#addParkButton").click();
+  $("#addParkButton").click(createPark);
 });
 
 // Park class
@@ -25,5 +25,9 @@ function Park(somepark) {
   var me = this;
   me.park_ = somepark;
   me.name = somepark.name;
+}
+
+function createPark() {
+  alert("create a park");
 }
 

@@ -469,3 +469,192 @@ Processing HomeController#index (for 127.0.0.1 at 2010-06-30 10:19:43) [GET]
 Rendering template within layouts/home
 Rendering home/index
 Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 10:23:05) [GET]
+  [4;35;1mPark Load (0.6ms)[0m   [0mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 10:27:08) [GET]
+  [4;36;1mPark Load (0.6ms)[0m   [0;1mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 10:46:40) [GET]
+  [4;35;1mPark Load (0.6ms)[0m   [0mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 10ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 10:48:55) [GET]
+  [4;36;1mPark Load (0.7ms)[0m   [0;1mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 71ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:05:08) [GET]
+  [4;35;1mPark Load (0.7ms)[0m   [0mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:05:52) [GET]
+  [4;36;1mPark Load (0.7ms)[0m   [0;1mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:08:14) [GET]
+  [4;35;1mPark Load (0.7ms)[0m   [0mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:08:43) [GET]
+  [4;36;1mPark Load (0.6ms)[0m   [0;1mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:25:12) [GET]
+  [4;35;1mPark Load (0.7ms)[0m   [0mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 69ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:26:05) [GET]
+  [4;36;1mPark Load (0.7ms)[0m   [0;1mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 10ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:29:18) [GET]
+  [4;35;1mPark Load (0.6ms)[0m   [0mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:29:48) [GET]
+  [4;36;1mPark Load (0.7ms)[0m   [0;1mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:31:01) [GET]
+  [4;35;1mPark Load (0.6ms)[0m   [0mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:31:33) [GET]
+  [4;36;1mPark Load (0.6ms)[0m   [0;1mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:32:24) [GET]
+  [4;35;1mPark Load (0.8ms)[0m   [0mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:32:59) [GET]
+  [4;36;1mPark Load (0.7ms)[0m   [0;1mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 12ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:40:05) [GET]
+  [4;35;1mPark Load (0.6ms)[0m   [0mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:41:39) [GET]
+  [4;36;1mPark Load (0.6ms)[0m   [0;1mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:41:45) [GET]
+  [4;35;1mPark Load (0.6ms)[0m   [0mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 10ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:43:01) [GET]
+  [4;36;1mPark Load (0.6ms)[0m   [0;1mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:43:22) [GET]
+  [4;35;1mPark Load (0.6ms)[0m   [0mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:44:01) [GET]
+  [4;36;1mPark Load (0.6ms)[0m   [0;1mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 116ms (View: 71, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:44:20) [GET]
+  [4;35;1mPark Load (0.6ms)[0m   [0mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 50ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:45:27) [GET]
+  [4;36;1mPark Load (0.6ms)[0m   [0;1mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 47ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:45:47) [GET]
+  [4;35;1mPark Load (0.6ms)[0m   [0mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 119ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:46:09) [GET]
+  [4;36;1mPark Load (0.6ms)[0m   [0;1mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 51ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-30 11:46:18) [GET]
+  [4;35;1mPark Load (0.6ms)[0m   [0mSELECT * FROM "parks" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 143ms (View: 2, DB: 1) | 200 OK [http://localhost/]

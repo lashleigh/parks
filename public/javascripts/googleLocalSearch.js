@@ -162,6 +162,14 @@ LocalResult.prototype.html = function() {
   var container = document.createElement("div");
   container.className = "unselected";
   container.appendChild(me.result_.html.cloneNode(true));
+  var subdiv = document.createElement("input");
+  subdiv.type = "button";
+  subdiv.value = "Save park?";
+  subdiv.id = "addParkFromSearch";
+
+  //subdiv.className = "subclass";
+  //subdiv.appendChild(document.createTextNode('Save this as a park?'))
+  container.appendChild(subdiv);
   return container;
 }
 
