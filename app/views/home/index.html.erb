@@ -7,9 +7,12 @@
       visiting all of the national parks, but I still thought this might be useful 
       to someone. Also, it's a good excuse to learn more about the google maps 
       API and javascript.</p>
+  <p> <%= link_to "Add a Park?", "#", { :id => "addPark" } %> </p>
+
   <div id="add_park">
     <input id="addParkButton" type="button" value="Add a Park?"/>
   </div>
+
   <script type="text/javascript">
     var parks = <%= @parks.to_json %>;
   </script>

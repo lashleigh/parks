@@ -17,7 +17,28 @@ $(function() {
     google.maps.event.addListener(marker, 'click',
       function() { parkInfoWindow.open(gMap, marker); });
   });
-  $("#addParkButton").click(createPark);
+ 
+  var bikeLayer = new google.maps.BicyclingLayer();
+  bikeLayer.setMap(gMap);
+
+  var addingPark = false;
+  $("#addPark").click(function() {
+    addingPark = true;
+    $("#addPark").html("Click on the map to show us where your suggestion resides");
+  });
+
+  google.maps.event.addListener(gMap, 'click', function(e) {
+    if(addingPark) {
+      $("#addPark").html("make a suggestion");
+      addingPark = false;
+
+      /*var p = e.latLng;
+      $.get("/park/new", { lat: p.lat(), lng: p.lng() }, function(stuff) {
+        $.fancybox({ content: stuff, scrolling: "no" });
+      });*/
+      alert("add a park");
+    }
+  }); 
 });
 
 // Park class

@@ -1,4 +1,5 @@
 class ParksController < ApplicationController
+  layout "home"
   # GET /parks
   # GET /parks.xml
   def index
