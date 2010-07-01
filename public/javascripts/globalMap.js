@@ -2,6 +2,7 @@
 var gLocalSearch;
 var gMap;
 var gInfoWindow;
+var lastEvent;
 
 $(function() {
   // Initialize the map with default UI.
@@ -25,9 +26,17 @@ $(function() {
   $("#map_canvas").click( function(event) {
     var $target = $(event.target);
     if( $target.is('.addParkFromSearch') ) {
-      alert( 'W00t!' );
+      createParkFromSearch(event);
       return false;
     }
   }); 
 });
 
+function createParkFromSearch(event) {
+  lastEvent = event;
+  var parkLatLng = $(lastEvent.originalTarget).parents(".unselected").find(".hiddenLatLng").html().split(', ');
+  var suggestedName = $(lastEvent.originalTarget).parents(".unselected").find("a.gs-title").text();
+  $.get("/home/new_park", { lat: parkLatLng[0], lng: parkLatLng[1], name: suggestedName }, function(stuff) {
+    $.fancybox({ content: stuff, scrolling: "no" });
+  });
+}

@@ -143,18 +143,19 @@ LocalResult.prototype.html = function() {
   button.type = "button";
   button.value = "Save park?";
   button.className = "addParkFromSearch";
+  var hiddenLatLng = document.createElement("div");
+  hiddenLatLng.className = "hiddenLatLng";
+  hiddenLatLng.appendChild(document.createTextNode(parseFloat(me.result_.lat) ));
+  hiddenLatLng.appendChild(document.createTextNode(", "));
+  hiddenLatLng.appendChild(document.createTextNode(parseFloat(me.result_.lng) ));
   container.appendChild(button);
+  container.appendChild(hiddenLatLng);
   return container;
 }
 
 LocalResult.prototype.highlight = function(highlight) {
   this.marker().setOptions({icon: highlight ? gRedIcon : gYellowIcon});
   this.node().className = "unselected" + (highlight ? " red" : "");
-}
-
-function addParkFromSearch(searchResult) {
-  var me = this;
-
 }
 
 // I moved the on load functionality over to globalMap.js

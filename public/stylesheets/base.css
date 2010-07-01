@@ -46,3 +46,5 @@ a:visited { color: #443312; }
   width: 300px;
   float: left;
 }
+#addParkFromSearch { color: #232323; }
+.hiddenLatLng { display: none; }

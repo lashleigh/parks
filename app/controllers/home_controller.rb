@@ -15,6 +15,7 @@ class HomeController < ApplicationController
     @park = Park.new
     @park.latitude = params[:lat]
     @park.longitude = params[:lng]
+    @park.name = params[:name]
     unless @park.latitude and @park.longitude
       render :text => "<h3>Please provide the coordinates of your park.</h3>"
     else
