@@ -75,11 +75,17 @@ Park.prototype.marker = function() {
 };
 
 Park.prototype.select = function() {
-  unselectMarkers();
-  this.selected_ = true;
-  //this.highlight(true);
-  parkInfoWindow.setContent(this.name); //this.html(true));
+  parkInfoWindow.setContent(this.html(true));
   parkInfoWindow.open(gMap, this.marker());
 };
 
+Park.prototype.html = function() {
+  var me = this;
+  var container = document.createElement("h3");
+  container.appendChild(document.createTextNode(me.name));
+  var moreContent = document.createElement("h5");
+  moreContent.appendChild(document.createTextNode(me.description));
+  container.appendChild(moreContent);
+  return container;
+}
 
