@@ -139,20 +139,22 @@ LocalResult.prototype.html = function() {
   var container = document.createElement("div");
   container.className = "unselected";
   container.appendChild(me.result_.html.cloneNode(true));
-  var subdiv = document.createElement("input");
-  subdiv.type = "button";
-  subdiv.value = "Save park?";
-  subdiv.id = "addParkFromSearch";
-
-  //subdiv.className = "subclass";
-  //subdiv.appendChild(document.createTextNode('Save this as a park?'))
-  container.appendChild(subdiv);
+  var button = document.createElement("input");
+  button.type = "button";
+  button.value = "Save park?";
+  button.className = "addParkFromSearch";
+  container.appendChild(button);
   return container;
 }
 
 LocalResult.prototype.highlight = function(highlight) {
   this.marker().setOptions({icon: highlight ? gRedIcon : gYellowIcon});
   this.node().className = "unselected" + (highlight ? " red" : "");
+}
+
+function addParkFromSearch(searchResult) {
+  var me = this;
+
 }
 
 // I moved the on load functionality over to globalMap.js

@@ -22,4 +22,12 @@ $(function() {
 
   // dosearch is the div id of the button
   $("#dosearch").click(doSearch);
+  $("#map_canvas").click( function(event) {
+    var $target = $(event.target);
+    if( $target.is('.addParkFromSearch') ) {
+      alert( 'W00t!' );
+      return false;
+    }
+  }); 
 });
+

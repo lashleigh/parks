@@ -11,19 +11,6 @@ $(function() {
     parkList.push( new Park(parks[i]) );
   }
   
-/*  $(parks).each(function f(i, park) {
-    var marker = new google.maps.Marker({
-      position: new google.maps.LatLng(park.latitude, park.longitude),
-      map: gMap,
-      title: park.name,
-      draggable: false
-    });
-    parkInfoWindow.setContent(marker.title)
-  google.maps.event.addListener(marker, 'click',
-    function() { parkInfoWindow.open(gMap, marker); });
-  });
-*/
- 
   var bikeLayer = new google.maps.BicyclingLayer();
   bikeLayer.setMap(gMap);
 
@@ -55,7 +42,6 @@ function Park(somepark) {
   me.lng = somepark.longitude;
   me.description = somepark.description;
   me.marker_ = me.marker();
-  console.log("new park created " + me.name + " " + me.description);
 }
 
 Park.prototype.marker = function() {
@@ -70,7 +56,6 @@ Park.prototype.marker = function() {
     google.maps.event.addListener(marker, "click", function() {
       me.select();
     });
-    console.log("create marker " + me.lat + ", " + me.lng);
   return marker;
 };
 
@@ -81,10 +66,13 @@ Park.prototype.select = function() {
 
 Park.prototype.html = function() {
   var me = this;
-  var container = document.createElement("h3");
-  container.appendChild(document.createTextNode(me.name));
-  var moreContent = document.createElement("h5");
+  var container = document.createElement("div");
+  container.className = "parkInfo";
+  var name = document.createElement("h3");
+  name.appendChild(document.createTextNode(me.name));
+  var moreContent = document.createElement("h4");
   moreContent.appendChild(document.createTextNode(me.description));
+  container.appendChild(name);
   container.appendChild(moreContent);
   return container;
 }
