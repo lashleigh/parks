@@ -1,7 +1,7 @@
 <div id="new_park">
   <h1>New Park</h1>
   
-  <% form_for @park do |f| %>
+  <% remote_form_for @park do |f| %>
     <%= f.error_messages %>
   
     <p>

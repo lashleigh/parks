@@ -2,7 +2,7 @@
 // compliant. However the getLength() method does not exist 
 // in version 3 yet.
 
-$(function() {
+jQuery(function() {
    Number.prototype.toRad = function() {
       return this * Math.PI / 180;
    }

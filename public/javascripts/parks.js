@@ -4,7 +4,7 @@ var parkInfoWindow;
 var parkList = [];
 
 // Initialize the parks with one info window
-$(function() {
+jQuery(function() {
   parkInfoWindow = new google.maps.InfoWindow;
 
   for( var i = 0; i < parks.length; i++) {
@@ -15,19 +15,19 @@ $(function() {
   bikeLayer.setMap(gMap);
 
   var addingPark = false;
-  $("#addPark").click(function() {
+  jQuery("#addPark").click(function() {
     addingPark = true;
-    $("#addPark").html("Click on the map to show us where your suggestion resides");
+    jQuery("#addPark").html("Click on the map to show us where your suggestion resides");
   });
 
   google.maps.event.addListener(gMap, 'click', function(e) {
     if(addingPark) {
-      $("#addPark").html("Add a park?");
+      jQuery("#addPark").html("Add a park?");
       addingPark = false;
 
       var p = e.latLng;
-      $.get("/home/new_park", { lat: p.lat(), lng: p.lng() }, function(stuff) {
-        $.fancybox({ content: stuff, scrolling: "no" });
+      jQuery.get("/home/new_park", { lat: p.lat(), lng: p.lng() }, function(stuff) {
+        jQuery.fancybox({ content: stuff, scrolling: "no" });
       });
     }
   }); 
