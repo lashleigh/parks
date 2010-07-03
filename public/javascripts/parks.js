@@ -22,7 +22,7 @@ $(function() {
 
   google.maps.event.addListener(gMap, 'click', function(e) {
     if(addingPark) {
-      $("#addPark").html("make a suggestion");
+      $("#addPark").html("Add a park?");
       addingPark = false;
 
       var p = e.latLng;

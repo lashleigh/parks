@@ -11,6 +11,7 @@ $(function() {
     zoom: 3,
     mapTypeId: 'roadmap'
   });
+  initialize();
   // Create one InfoWindow to open when a marker is clicked.
   gInfoWindow = new google.maps.InfoWindow;
   google.maps.event.addListener(gInfoWindow, 'closeclick', function() {

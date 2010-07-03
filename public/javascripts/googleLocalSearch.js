@@ -95,7 +95,8 @@ function LocalResult(result) {
 
 LocalResult.prototype.node = function() {
   if (this.resultNode_) return this.resultNode_;
-  return this.html();
+  return this.sideBar();
+  //return this.html();
 };
 
 // Returns the GMap marker for this result, creating it with the given
